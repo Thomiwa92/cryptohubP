@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptohub Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>Cryptohub</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Receive</a></li>
+        <li><a href="#">Send</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Header -->
+      <div class="header">
+        <div class="profile">
+          <img src="https://via.placeholder.com/40" alt="Profile">
+          <span>John Doe</span>
+        </div>
+      </div>
+
+      <!-- Wallet Balance -->
+      <div class="wallet-card">
+        <h3>Wallet Balance:</h1>
+        <p>Wallet Address (SOL): <span id="btc-balance">9zMmbuomHwbZLG1YvncwaJyGxxstWcQK-CLdFvPcadxwu</span></p>
+        <p>BITCOIN: <span id="btc-balance">0.5</span></p>
+        <p>ETHEREUM: <span id="eth-balance">2.0</span></p>
+        <p>USDT: <span id="usdt-balance">$30,000.0</span></p>
+      </div>
+
+      <!-- Recent Transactions -->
+      <div class="transactions-table">
+        <h3>Recent Transactions</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Type</th>
+              <th>Amount</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2024-10-01</td>
+              <td>Deposit</td>
+              <td>0.0332224 ETH</td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+            <tr>
+                <td>2024-12-01</td>
+                <td>Deposit</td>
+                <td>0.1 BTC</td>
+                <td><span class="status completed">Completed</span></td>
+              </tr>
+            <tr>
+              <td>2024-12-12</td>
+              <td>Withdrawal</td>
+              <td>0.05 BTC</td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

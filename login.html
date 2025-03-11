@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptohub Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-form">
+      <h1>Cryptohub Login</h1>
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button id="login-button">Login</button>
+      <p id="error-message" class="error"></p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('login-button').addEventListener('click', function () {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Simple validation
+      if (username === 'admin' && password === 'password') {
+        window.location.href = 'dashboard.html'; // Redirect to dashboard
+      } else {
+        document.getElementById('error-message').textContent = 'Invalid username or password';
+      }
+    });
+  </script>
+</body>
+</html>
